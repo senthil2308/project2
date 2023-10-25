@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Senthil- Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    background-image: "AM.jpg";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+.header-content h1{
+    font-size: 2rem 0;
+}
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+ 
+}
+.nav{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: circle;
+    color:white;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#2a2626;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+.section-content{
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.download-button{
+    background-color: #333;
+    color:#fff;
+    padding: 0,5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top: 10px;
+}
+.download-button:hover{
+    background-color: #555;
+}
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+ul{
+    list-style-type: square;
+    padding: 20px;
+}
+      </style>
+</head>
+<body background="AM.jpg">
+    <header>
+        <img src="1249.jpg" alt="1249" class="profile-picture">
+        <h1>Senthil Manikandan P</h1>
+        <p>Web Developer | Designer | programmer</p></div>
+    </header>
+    <nav>
+       <ul> <li><a href="#about">About</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">resume</a></li>
+       </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+        <h2>About Me</h2>
+        <p>Hii Everyone,
+             My Name is Senthil Manikandan am web designer</p></div>
+    </section>
+    <section id="skills">
+    <div class="section-content">
+        <h2>skills</h2>
+            <ul>
+                <li>c</li>
+                <li>c++</li>
+                <li>java</li>
+                <li>python</li>
+                <li>html</li>
+            </ul></div>
+    </section>
+    <section id="projects">
+        <div class="section-content">
+        <h2>projects</h2>
+       <ul>
+        <li><a href="senthil10.html">project 1 </a></li>
+       </ul></div></section>
+       <section id="resume">
+        <center>
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="senthil28.html" class="download-button">Download CV</a>
+         </div></center></section>
+    <section id="contact">
+        <div class="section-content">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: <a href="email.html">lovelysenthil2810@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Leader aerumai balaji</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click',function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement= document.getElementById(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
